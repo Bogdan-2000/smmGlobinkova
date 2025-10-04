@@ -6,6 +6,11 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 html {
     scroll-behavior: smooth;
@@ -202,6 +207,11 @@ html {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    max-width: 100%;
+}
+.form-group input,
+.form-group textarea {
+    max-width: 100%;
 }
 
 .form-group {
@@ -365,8 +375,15 @@ html {
     color: #888888;
     font-size: 14px;
 }
+.header-section,
+.about-section,
+.services-section,
+.contact-section,
+.footer {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
-/* Адаптація футера */
 @media (max-width: 768px) {
     .footer {
         padding: 40px 20px 20px;
